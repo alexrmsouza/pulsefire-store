@@ -21,12 +21,12 @@
                 <v-app-bar app class="navbar">
                     <v-app-bar-nav-icon v-if="isMobile" @click.stop="drawer = !drawer" />
 
-                    <img :src="logoUrl" :class="logoClass" />
+                    <img src="@/static/logo-pulsefire.png" :class="logoClass" />
                 </v-app-bar>
             </v-toolbar>
 
             <div v-if="!isMobile">
-                <img :src="logoUrl" :class="logoClass" />
+                <img src="@/static/logo-pulsefire.png" :class="logoClass" @click="redirect('/')" />
             </div>
         </header>
 
@@ -50,12 +50,14 @@
                     </v-col>
 
                     <v-col md="8">
-                        <v-text-field hide-details append-icon="mdi-magnify" single-line class="search-field" />
+                        <form @submit.prevent="search">
+                            <v-text-field v-model="query" hide-details append-icon="mdi-magnify" single-line class="search-field" />
+                        </form>
                     </v-col>
 
                     <v-col md="2">
                         <div class="ml-auto" style="width: max-content">
-                            <v-avatar color="primary" size="28">{{ user.initials }}</v-avatar>
+                            <!-- <v-avatar color="primary" size="28">{{ user.initials }}</v-avatar> -->
 
                             <v-icon color="blue">mdi-account</v-icon>
 
@@ -73,6 +75,17 @@
         </v-main>
 
         <v-footer :absolute="navFloat" app>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <span>&copy; {{ new Date().getFullYear() }}</span>
         </v-footer>
     </v-app>
@@ -81,7 +94,7 @@
 <style>
 .v-main {
     padding-top: 0 !important;
-    background-image: url(https://pbs.twimg.com/media/EWtRHoXXYAArWpv?format=jpg&name=large);
+    background-image: url(https://pbs.twimg.com/media/EWtRHoXXYAArWpv?format=jpg&name=large), linear-gradient(#00b1f8,#000000);;
     background-size: 100%;
 }
 
@@ -125,7 +138,6 @@ export default {
                 name: '',
                 initials: ''
             },
-            logoUrl: "logo-pulsefire.png",
             logoClass: "navbar-logo",
             isMobile: false,
             drawer: false,
@@ -140,6 +152,7 @@ export default {
                     to: "/ranged",
                 },
             ],
+            query: '',
         };
     },
 
@@ -162,6 +175,18 @@ export default {
             this.isMobile = window.innerWidth < 600;
             process.env.isMobile = this.isMobile;
         },
+
+        search() {
+            if (this.query === "") {
+                this.redirect('/');
+            } else {
+                this.redirect(`/busca/${this.query}`);
+            }
+        },
+
+        redirect(route) {
+            this.$router.push(route);
+        }
     },
 };
 </script>

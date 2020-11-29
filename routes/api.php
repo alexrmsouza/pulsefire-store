@@ -29,3 +29,4 @@ Route::get('me', function () {
 
 Route::get('product/list', 'ProductController@listAction');
 Route::get('product/{productId}', 'ProductController@getAction');
+Route::get('product/search/{query}', 'ProductController@searchAction');

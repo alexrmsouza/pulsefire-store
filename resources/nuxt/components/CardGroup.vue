@@ -4,24 +4,32 @@
             {{ title }}
         </h2>
 
-        <v-carousel cycle :interval="8000" hide-delimiters>
+        <!-- <v-carousel cycle :interval="8000" hide-delimiters>
             <v-carousel-item v-for="(split, i) in splittedGroup" :key="i">
                 <v-layout row>
                     <v-flex v-for="(item, index) in split" :key="index" col md4 xs12>
-                        <ProductCard :name="item.name" :price="item.price" mb5>
-                            <template v-slot:button>
-                                <v-btn @click.stop="buy(item, index)"> Comprar </v-btn>
-                            </template>
-                        </ProductCard>
+                        <ProductCard :name="item.name" :price="item.price" mb5></ProductCard>
                     </v-flex>
                 </v-layout>
             </v-carousel-item>
-        </v-carousel>
+        </v-carousel> -->
+
+        <carousel v-bind="carouselConfig">
+            <v-flex v-for="(item, index) in group" :key="index">
+                <ProductCard :name="item.name" :price="item.price" mb5></ProductCard>
+            </v-flex>
+        </carousel>
     </div>
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel'
+
 export default {
+    components: {
+        carousel 
+    },
+
     props: {
         title: {
             type: String,
@@ -52,6 +60,27 @@ export default {
         window.addEventListener("resize", this.carouselSplit, { passive: true });
     },
 
+    computed: {
+        carouselConfig() {
+            return {
+                autoplay: true,
+                autoplaySpeed: true,
+                autoplayTimeout: 2000,
+                nav: false,
+                items: 3,
+                rewind: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    }
+                }
+            }
+        }
+    },
+
     methods: {
         carouselSplit() {
             let isMobile = process.env.isMobile;
@@ -70,8 +99,6 @@ export default {
                 if (isMobile) {
                     maxItems = 1;
                 }
-
-                console.log(isMobile);
 
                 if (
                     currentIndex % maxItems === 0 ||
