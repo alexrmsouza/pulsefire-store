@@ -1,44 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a4c29e4-aafd-45e8-baa7-841f5194fe85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/nuxt/components/CardGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/nuxt/components/CardGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/nuxt/components/ProductCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/nuxt/components/ProductCard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/nuxt/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/nuxt/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_28_000001_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_28_000002_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_28_004833_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_28_004833_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_28_005450_create_addresses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_28_005450_create_addresses_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -156,6 +138,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1ktd5uwcJwWMCQAAbNlzgAI9yUG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -186,6 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606523641260</updated>
       <workItem from="1606523642382" duration="1609000" />
+      <workItem from="1606661426118" duration="2469000" />
     </task>
     <servers />
   </component>
@@ -195,6 +181,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/alexm/Dev/pulsefire-store-pack/database/migrations" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -202,19 +213,41 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="0" key="#PHP" timestamp="1606523760812">
+    <state x="554" y="0" key="#PHP" timestamp="1606661535881">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="554" y="0" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1606523760812" />
-    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1606523762129">
+    <state x="554" y="0" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1606661535881" />
+    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1606663811640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606523762129" />
+    <state x="562" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606663811640" />
+    <state x="530" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606663091108">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="530" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1606663091108" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606663859016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606663859016" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1606662978092">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1606662978092" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1606523977749">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606523977749" />
+    <state x="618" y="326" key="VCS.ChangelistChooser" timestamp="1606662897107">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1606662897107" />
   </component>
 </project>
